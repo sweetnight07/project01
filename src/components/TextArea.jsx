@@ -3,7 +3,7 @@ import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAuto
 import { styled } from '@mui/system';
 
 export default function TextArea() {
-  return <TextareaAutosize aria-label="empty textarea" placeholder="Empty" />;
+  return <TextareaAutosize aria-label="empty textarea" placeholder="Search For Image" />;
 }
 
 const blue = {
@@ -30,7 +30,7 @@ const grey = {
 
 const TextareaAutosize = styled(BaseTextareaAutosize)(
   ({ theme }) => `
-  width: 320px;
+  width: 500px;
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
