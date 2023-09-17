@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "../globals.css";
 import ButtonUse from "@components/ButtonUse";
 import Text from "@components/Text";
@@ -6,6 +8,12 @@ import Pointer from "@components/Pointer";
 import TextArea from "@components/TextArea";
 
 export default function Index() {
+  const [text, setText] = useState("");
+
+  const getText = () => {
+    ax;
+  };
+
   return (
     <>
       <div className="flex flex-col bg-background w-screen h-screen">
@@ -21,7 +29,7 @@ export default function Index() {
 
         <div className="inline-block align-baseline">
           <Text />
-          <ButtonUse text="Cerebrum" />
+          <ButtonUse text="Cerebrum" handler={cerebrumButton} />
           <ButtonUse text="Frontal Lobe" />
           <ButtonUse text="Temporal Lobe" />
           <ButtonUse text="Spinal Cord" />
