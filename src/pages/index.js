@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from "axios";
 import "../globals.css";
 import ButtonUse from "@components/ButtonUse";
 import Text from "@components/Text";
@@ -8,11 +7,13 @@ import Pointer from "@components/Pointer";
 import TextArea from "@components/TextArea";
 
 export default function Index() {
-  const [text, setText] = useState("");
+  const [description, setDescription] = useState("None");
 
-  const getText = () => {
-    ax;
+  const handler = (buttonText) => {
+    setDescription(buttonText);
   };
+
+  console.log(description);
 
   return (
     <>
@@ -29,14 +30,38 @@ export default function Index() {
 
         <div className="inline-block align-baseline">
           <Text />
-          <ButtonUse text="Cerebrum" handler={cerebrumButton} />
-          <ButtonUse text="Frontal Lobe" />
-          <ButtonUse text="Temporal Lobe" />
-          <ButtonUse text="Spinal Cord" />
-          <ButtonUse text="Parietal Lobe" />
-          <ButtonUse text="Occipital Lobe" />
-          <ButtonUse text="Cerebellum" />
-          <ButtonUse text="Cortex" />
+          <ButtonUse
+            text="Cerebrum"
+            handler={handler.bind(null, "cerebrumButton")}
+          />
+          <ButtonUse
+            text="Frontal Lobe"
+            handler={handler.bind(null, "frontallobeButton")}
+          />
+          <ButtonUse
+            text="Temporal Lobe"
+            handler={handler.bind(null, "temporallobeButton")}
+          />
+          <ButtonUse
+            text="Spinal Cord"
+            handler={handler.bind(null, "spinalcordButton")}
+          />
+          <ButtonUse
+            text="Parietal Lobe"
+            handler={handler.bind(null, "parietallobeButton")}
+          />
+          <ButtonUse
+            text="Occipital Lobe"
+            handler={handler.bind(null, "occipitallobeButton")}
+          />
+          <ButtonUse
+            text="Cerebellum"
+            handler={handler.bind(null, "cerebellumButton")}
+          />
+          <ButtonUse
+            text="Cortex"
+            handler={handler.bind(null, "cortexButton")}
+          />
         </div>
       </div>
     </>

@@ -1,8 +1,7 @@
-import { TextField } from "@mui/material"
-
+import { TextField } from "@mui/material";
 
 function Text() {
-    return (<TextField label="SearchBar" focused /> );
+  return <TextField label="SearchBar" focused />;
 }
 
 export default Text;
