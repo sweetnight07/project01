@@ -1,3 +1,9 @@
+Theoretically, this was suppose to be an application where it teaches the user about the brain. We have an image of a brain, a description box, a pointer, and several buttons. The main functionalities was going to be the button handler where when pressed, a description would be displayed about that certain part of the brain. In addition, the pointer would also move to pinpoint the location of this. This utilizes many different fullstack techniques and frameworks.
+
+FrontEnd: The frontend was suppose to consist a user interface using ReactJS and different component where "onClick" for button retries data from MongoDB.
+BackEnd: The backend has a server, database, and was suppose to utilize an API for an image gallery.
+MongoDB: I used a mongoDB compass where the data is locally stored and was suppose retried the description associated with the buttons pressed.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,5 +38,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-
