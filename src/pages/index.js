@@ -1,16 +1,25 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import axios from "axios";
 import "../globals.css";
 import ButtonUse from "@components/ButtonUse";
 import Text from "@components/Text";
 import Pointer from "@components/Pointer";
 import TextArea from "@components/TextArea";
 
+const baseURL = "http://localhost";
+const PORT = 5050;
+
+const axiosInstance = axios.create({ baseURL: "${baseURL}:${PORT}" });
+
 export default function Index() {
   const [description, setDescription] = useState("None");
 
   const handler = (buttonText) => {
-    setDescription(buttonText);
+    axiosInstance.get("/description", { text: buttonText }).then((res) => {
+      // setDescription(res.data);
+      console.log(res.data);
+    });
   };
 
   console.log(description);
